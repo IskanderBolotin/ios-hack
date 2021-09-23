@@ -1,0 +1,40 @@
+body {
+    height: 400vh;
+    background-color: black;
+}
+.bottomBar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: red;
+}
+.bottomBar.bottomBar-sb {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.fixedMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: yellow;
+}
+.fixedMenu.fixedMenu-vh {
+    height: 100vh;
+}
+.fixedMenu.fixedMenu-b {
+    bottom: 0;
+}
+.fixedMenu.fixedMenu-fa {
+    height: -webkit-fill-available;
+}
+.fixedMenu.fixedMenu-sb {
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.fixedMenu__inner {
+    background-color: green;
+    height: 100%;
+}
